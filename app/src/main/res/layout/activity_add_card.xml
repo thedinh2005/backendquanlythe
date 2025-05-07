@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Card hiển thị thông tin thẻ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:background="#1A237E"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#1A237E"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:backgroundTintMode="src_in"
+            android:radius="12dp">
+
+            <TextView
+                android:text="Loại Thẻ"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="•••• •••• •••• ••••"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="Họ và Tên"
+                    android:textColor="#FFFFFF"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="MM/YY"
+                    android:textColor="#FFFFFF"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Nhập số thẻ -->
+        <EditText
+            android:id="@+id/et_card_number"
+            android:hint="Số thẻ"
+            android:maxLength="16"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp" />
+
+        <!-- Tên chủ thẻ -->
+        <EditText
+            android:id="@+id/et_card_holder"
+            android:hint="Tên chủ thẻ"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp" />
+
+
+        <!-- Nhập Loại + Hạn + CVV -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/et_card_type"
+                android:hint="Loại"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/et_opened_date"
+                android:hint="MM/YY"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/et_cvv"
+                android:hint="CVV"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+        <!-- Nút lưu -->
+        <Button
+            android:id="@+id/btn_save_card"
+            android:text="THÊM THẺ"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0010FF"
+            android:textColor="#FFFFFF"
+            android:padding="14dp"
+             />
+
+    </LinearLayout>
+</ScrollView>

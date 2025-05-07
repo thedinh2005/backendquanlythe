@@ -1,0 +1,13 @@
+<resources>
+    <!-- Chuỗi mặc định (nếu đã có, giữ nguyên) -->
+    <string name="app_name"><strong>BILLPAY</strong></string>
+
+    <!-- Thêm các chuỗi này để sửa lỗi -->
+    <string name="menu_home">Trang chủ</string>
+    <string name="menu_card">Quản lý thẻ</string>
+    <string name="menu_settings">Cài đặt</string>
+
+    <!-- Nếu dùng drawer toggle -->
+    <string name="openDrawer">Mở menu</string>
+    <string name="closeDrawer">Đóng menu</string>
+</resources>
